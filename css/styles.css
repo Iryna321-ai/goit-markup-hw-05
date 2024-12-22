@@ -427,6 +427,9 @@ font-weight: 500;
 }
 
 .page-footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-color: #2e2f42;
     width: 100%;
     padding-top: 100px;
@@ -467,6 +470,10 @@ font-weight: 500;
     margin-bottom: 16px;
 }
 
+.social-container-footer{
+   margin-right: 80px;
+}
+
 .social-list-footer {
     display: flex;
     justify-content: center;
@@ -499,11 +506,6 @@ font-weight: 500;
     fill: #f4f4fd;
 }
 
-.subscribe-container-footer {
-   margin-right: 0;
-
-}
-
 .footer-text-subscribe {
     display: block;
     font-weight: 500;
@@ -513,6 +515,12 @@ font-weight: 500;
     color: #fff;
     margin-top: 0;
     margin-bottom: 16px;
+}
+
+.footer-form {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
 }
 
 .footer-submit-btn {
@@ -530,8 +538,13 @@ font-weight: 500;
     letter-spacing: 0.04em;
     text-align: center;
     color: #FFFFFF;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.footer-submit-btn:hover,
+.footer-submit-btn:focus {
+   background-color: #404BBF;
+}
 .footer-form-input {
     min-width: 264px;
     height: 40px;
@@ -539,9 +552,24 @@ font-weight: 500;
     border-radius: 4px;
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
     margin-right: 24px;
+    background-color: #2E2F42;
+    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.social-list-icons {
+.footer-form-input::placeholder {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 2.0;
+    letter-spacing: 0.04em;
+    color: #FFFFFF;
+    padding: 8px 16px;
+}
+
+.footer-form-input:hover,
+..footer-form-input:focus{
+    border: #31d0aa;
+}
+.footer-form-icon {
     margin-left: 16px;
     fill: #FFFFFF;
 }
