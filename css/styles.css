@@ -706,6 +706,10 @@ fill: #FFFFFF;
     position: relative;
 }
 
+.cont-textarea {
+    margin-bottom: 16px;
+}
+
 .form-user-coment {
     width: 100%;
     resize: none;
